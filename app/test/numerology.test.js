@@ -90,4 +90,35 @@ describe("Numerology", () => {
       });
     });
   });
+
+  it("shall have the ability to convert a name into an array of numbers", () => {
+    let name = "Freda Mary Norton";
+    let expectedOutput = [
+      6, 9, 5, 4, 1, 0,
+      4, 1, 9, 7, 0,
+      5, 6, 9, 2, 6, 5
+    ];
+
+    let n = new Numerology();
+
+    expect(n.getNumberArray(name)).to.deep.equal(expectedOutput);
+  });
+
+  it("shall have ability to get the destiny number", () => {
+    let name = "John Henry Jones";
+    let expectedDestinyNumber = 9;
+
+    let n = new Numerology();
+
+    expect(n.getDestinyNumber(name)).to.equal(expectedDestinyNumber);
+  });
+
+  it("shall have ability to get the destiny number", () => {
+    let name = "Ray Joseph de Castro";
+    let expectedDestinyNumber = 4;
+
+    let n = new Numerology();
+
+    expect(n.getDestinyNumber(name)).to.equal(expectedDestinyNumber);
+  });
 });
