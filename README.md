@@ -8,9 +8,9 @@
 * user interface specific code using react framework
 
 ## team
-* Ray Joseph de Castro. Software Architect. 
-* TBD. Lead Software Engineer.
-* TBD. Software Engineer.
+* ray joseph de dastro. software architect. 
+* tbd. lead software engineer.
+* tbd. software engineer.
 
 ## references
 * jordan, juno. numerology. the romance in your name.
