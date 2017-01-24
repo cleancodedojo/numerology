@@ -1,14 +1,7 @@
 import React from 'react';
-import Numerology from '../core/numerology';
 import '../styles/numerology.css';
 
 const NumerologyPage = () => {
-  let n = new Numerology();
-  let name = "Jaymarc De Castro";
-  let destinyNumber = n.getDestinyNumber(name);
-
-  console.log("destiny number: " + destinyNumber);
-
   return (
     <div className="numerology-page">
       <h1>Numerology</h1>
