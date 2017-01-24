@@ -12,8 +12,6 @@ class App extends React.Component {
         {' | '}
         <Link to="numerology">Numerology</Link>
         {' | '}
-        <Link to="/fuel-savings">Demo App</Link>
-        {' | '}
         <Link to="/about">About</Link>
         <br/>
         {this.props.children}
