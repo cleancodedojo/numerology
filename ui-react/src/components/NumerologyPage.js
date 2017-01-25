@@ -16,11 +16,11 @@ const NumerologyPage = () => {
           </div>
           <div className="input-group col-lg-8">
             <label htmlFor="email-address">Email Address</label>
-            <input type="text" className="form-control" id="email-address" />
+            <input type="text" className="form-control" id="email-address" placeholder="email@happiness.com" />
           </div>
           <div className="input-group col-lg-8">
             <label htmlFor="first-name">First Name</label>
-            <input type="text" className="form-control" id="first-name" />
+            <input type="text" className="form-control" id="first-name" placeholder="first name given during birth"/>
           </div>
           <div className="input-group col-lg-8">
             <label htmlFor="middle-name">Middle Name</label>
@@ -28,7 +28,7 @@ const NumerologyPage = () => {
           </div>
           <div className="input-group col-lg-8">
             <label htmlFor="last-name">Last Name</label>
-            <input type="text" className="form-control" id="last-name" />
+            <input type="text" className="form-control" id="last-name" placeholder="last name given during birth"/>
           </div>
           <div className="btn-group">
             <button type="button" className="btn btn-default">
