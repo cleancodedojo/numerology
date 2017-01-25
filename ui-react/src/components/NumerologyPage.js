@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/numerology.css';
+import CalculationsPage from './CalculationsPage';
+import Numerology from '../core/numerology';
 
 class NumerologyPage extends Component {
   constructor(props) {
@@ -8,7 +10,8 @@ class NumerologyPage extends Component {
 
     this.state = {
       firstName: '',
-      lastName: ''
+      lastName: '',
+      isVisible: false
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,7 +20,21 @@ class NumerologyPage extends Component {
   }
 
   handleSubmit(event) {
+    this.setState({isVisible: true});
     event.preventDefault();
+  }
+
+  getName() {
+    return this.state.firstName + ' ' + this.state.lastName;
+  }
+
+  getIsVisible() {
+    return this.state.isVisible;
+  }
+
+  getDestinyNumber() {
+    let n = new Numerology();
+    return n.getDestinyNumber(this.getName());
   }
 
   handleFirstNameChange(event) {
@@ -69,6 +86,8 @@ class NumerologyPage extends Component {
             </form>
           </div>
         </div>
+
+        <CalculationsPage isVisible={this.getIsVisible()} name={this.getName()} destinyNumber={this.getDestinyNumber()} />
       </div>
     );
   }
