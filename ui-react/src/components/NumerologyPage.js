@@ -31,7 +31,7 @@ const NumerologyPage = () => {
             <input type="text" className="form-control" id="last-name" placeholder="last name given during birth"/>
           </div>
           <div className="btn-group">
-            <button type="button" className="btn btn-default">
+            <button type="submit" className="btn btn-default">
               calculate
             </button>
           </div>
