@@ -20,7 +20,7 @@ class NumerologyPage extends Component {
   }
 
   handleSubmit(event) {
-    this.setState({isVisible: true});
+    this.setState({ isVisible: true });
     event.preventDefault();
   }
 
@@ -38,12 +38,11 @@ class NumerologyPage extends Component {
   }
 
   handleFirstNameChange(event) {
-    console.log('fn: ' + event.target.value);
-    this.setState({firstName: event.target.value});
+    this.setState({ firstName: event.target.value });
   }
 
   handleLastNameChange(event) {
-    this.setState({lastName: event.target.value});
+    this.setState({ lastName: event.target.value });
   }
 
   render() {
@@ -56,27 +55,15 @@ class NumerologyPage extends Component {
           <div className="panel-body">
             <form onSubmit={this.handleSubmit}>
               <div className="input-group col-lg-8">
-                <span className="input-group-addon" id="handle">@</span>
-                <input type="text" className="form-control" placeholder="handle"/>
-              </div>
-              <div className="input-group col-lg-8">
-                <label htmlFor="email-address">Email Address</label>
-                <input type="text" className="form-control" id="email-address" placeholder="email@happiness.com"/>
-              </div>
-              <div className="input-group col-lg-8">
                 <label htmlFor="first-name">First Name</label>
                 <input type="text" className="form-control" id="first-name"
-                       placeholder="first name given during birth"
-                       value={this.state.firstName} onChange={this.handleFirstNameChange} />
-              </div>
-              <div className="input-group col-lg-8">
-                <label htmlFor="middle-name">Middle Name</label>
-                <input type="text" className="form-control" id="middle-name"/>
+                  placeholder="first name given during birth"
+                  value={this.state.firstName} onChange={this.handleFirstNameChange} />
               </div>
               <div className="input-group col-lg-8">
                 <label htmlFor="last-name">Last Name</label>
                 <input type="text" className="form-control" id="last-name" placeholder="last name given during birth"
-                       value={this.state.lastName} onChange={this.handleLastNameChange} />
+                  value={this.state.lastName} onChange={this.handleLastNameChange} />
               </div>
               <div className="btn-group">
                 <button type="submit" className="btn btn-default">
