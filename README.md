@@ -1,11 +1,6 @@
-# numerology
-* numerology mobile web application prototype 
-
-## app
+# numerology-core
+* numerology application prototype 
 * application specific code
-
-## ui-react
-* user interface specific code using react framework
 
 ## team
 * ray joseph de castro. software architect. 
