@@ -3,13 +3,11 @@ import React, {Component} from 'react';
 class CalculationsPage extends Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
     let calculationsPageTemplate = (
-      <div className="calculations-page">
-      </div>
+      <div className="calculations-page" />
     );
 
     if (this.props.isVisible) {

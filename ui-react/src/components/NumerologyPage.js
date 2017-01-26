@@ -38,7 +38,6 @@ class NumerologyPage extends Component {
   }
 
   handleFirstNameChange(event) {
-    console.log('fn: ' + event.target.value);
     this.setState({ firstName: event.target.value });
   }
 
@@ -75,7 +74,7 @@ class NumerologyPage extends Component {
           </div>
         </div>
 
-        <CalculationsPage isVisible={this.getIsVisible() } name={this.getName() } destinyNumber={this.getDestinyNumber() } />
+        <CalculationsPage isVisible={this.getIsVisible()} name={this.getName()} destinyNumber={this.getDestinyNumber()} />
       </div>
     );
   }
