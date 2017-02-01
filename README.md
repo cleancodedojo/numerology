@@ -40,6 +40,9 @@ npm run build
 ## usage
 ```js
 import Numerology from "numerology-core";
+let numerology = new Numerology();
+let name = "Thomas Edison";
+numerology.getDestinyNumber(name);
 ```
 
 ## technologies
@@ -53,7 +56,7 @@ import Numerology from "numerology-core";
 MIT
 
 ## team
-* [ray joseph de castro]. software architect. 
+* [Ray Joseph de Castro]. Software Architect.
 
 ## references
 * jordan, juno. numerology. the romance in your name.
@@ -62,4 +65,4 @@ MIT
 [node]: https://nodejs.org/
 [npm]: https://www.npmjs.com/
 [yarn]: https://yarnpkg.com/
-[ray joseph de castro]: https://github.com/raydecastro/
+[Ray Joseph de Castro]: https://github.com/raydecastro/

@@ -104,7 +104,7 @@ describe("Numerology", () => {
     expect(n.getNumberArray(name)).to.deep.equal(expectedOutput);
   });
 
-  it("shall have ability to get the destiny number", () => {
+  it("shall have ability to get the destiny number of 9 for John Henry Jones", () => {
     let name = "John Henry Jones";
     let expectedDestinyNumber = 9;
 
@@ -113,7 +113,7 @@ describe("Numerology", () => {
     expect(n.getDestinyNumber(name)).to.equal(expectedDestinyNumber);
   });
 
-  it("shall have ability to get the destiny number", () => {
+  it("shall have ability to get the destiny number of 4 for Ray Joseph de Castro", () => {
     let name = "Ray Joseph de Castro";
     let expectedDestinyNumber = 4;
 
