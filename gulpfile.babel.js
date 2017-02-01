@@ -12,5 +12,5 @@ gulp.task('test', () => {
 });
 
 gulp.task('test-auto', () => {
-    return gulp.watch(['src/*.js', 'test/*.js'], ['test']);
+    return gulp.watch(['source/*.js', 'test/*.js'], ['test']);
 });
