@@ -1,7 +1,7 @@
 "use strict";
 
 import {expect} from "chai";
-import Numerology from "../src/numerology.js";
+import Numerology from "../source/numerology.js";
 
 describe("Numerology", () => {
   it("shall exist", () => {

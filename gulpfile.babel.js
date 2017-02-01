@@ -1,5 +1,3 @@
-"use strict";
-
 import gulp from "gulp";
 import mocha from "gulp-mocha";
 import babel from "babel-register";
