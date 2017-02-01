@@ -2,11 +2,11 @@
   "name": "numerology-core",
   "version": "0.2.2",
   "description": "numerology core node es6 tdd",
-  "main": "./distribution/index.js",
+  "main": "./library/numerology.js",
   "scripts": {
     "test": "gulp test",
     "test-auto": "gulp test-auto",
-    "build": "babel src --presets babel-preset-es2015 --out-dir distribution",
+    "build": "babel source --presets babel-preset-es2015 --out-dir library",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -18,7 +18,7 @@
     "es6",
     "tdd"
   ],
-  "author": "ray de castro",
+  "author": "Ray Joseph de Castro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cleancodedojo/numerology-core/issues"

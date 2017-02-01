@@ -1,7 +1,3 @@
-src
+source
 test
 yarn.lock
-gulpfile.babel.js
-.npmignore
-.babelrc
-.gitignore
