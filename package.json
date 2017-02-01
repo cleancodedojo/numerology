@@ -1,6 +1,6 @@
 {
   "name": "numerology-core",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "numerology core node es6 tdd",
   "main": "./library/numerology.js",
   "scripts": {
