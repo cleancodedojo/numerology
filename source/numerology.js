@@ -142,6 +142,20 @@ class Numerology {
       default: return "";
     }
   }
+
+  getRealityNumber(name, dateOfBirth) {
+    let destinyNumber = this.getDestinyNumber(name);
+    let birthNumber = this.getBirthForceNumber(dateOfBirth);
+    let sum = destinyNumber + birthNumber;
+    let numberArray = [];
+
+    while (sum > 9) {
+      numberArray = this.convertSumToNumberArray(sum);
+      sum = this.getArraySum(numberArray);
+    }    
+
+    return sum;
+  }
 }
 
 export default Numerology;

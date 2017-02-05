@@ -144,6 +144,14 @@ describe("Numerology", () => {
     let n = new Numerology();
 
     expect(expectedPersonalityNumber).to.equal(n.getPersonalityNumber(name));
-  
+  });
+
+  it("shall have the ability to get the reality number", () => {
+    let name = "Henry Ford";
+    let dateOfBirth = "07-30-1863";
+    let expectedRealityNumber = 6;
+    let n = new Numerology();
+
+    expect(n.getRealityNumber(name, dateOfBirth)).to.equal(expectedRealityNumber);
   });
 });
