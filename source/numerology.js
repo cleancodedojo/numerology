@@ -80,6 +80,68 @@ class Numerology {
     let numberArray = this.getNumberArray(sumString);
     return numberArray;
   }
+
+  getBirthForceNumber(dateOfBirth) {
+    return this.getDestinyNumber(dateOfBirth);
+  }
+
+  getHeartsDesireNumber(name) {
+    let vowels = "";
+
+    for (let i = 0; i < name.length; i += 1) {
+      vowels += this.stripConsonants(name[i]);
+    }
+
+    return this.getDestinyNumber(vowels);
+  }
+
+  stripConsonants(letter) {
+    switch(letter.toLowerCase()) {
+      case "a":
+      case "e": 
+      case "i": 
+      case "o":
+      case "u": return letter.toLowerCase();
+      default: return "";
+    }
+  }
+
+  getPersonalityNumber(name) {
+    let consonants = "";
+
+    for (let i = 0; i < name.length; i += 1) {
+      consonants += this.stripVowels(name[i]);
+    }
+
+    return this.getDestinyNumber(consonants);
+  }
+
+  stripVowels(letter) {
+    switch(letter.toLowerCase()) {
+      case "j":
+      case "s":
+      case "b":
+      case "k":
+      case "t":
+      case "c":
+      case "l":
+      case "d":
+      case "m":
+      case "v":
+      case "n":
+      case "w":
+      case "f":
+      case "x":
+      case "g":
+      case "p":
+      case "y":
+      case "h":
+      case "q":
+      case "z":
+      case "r": return letter.toLowerCase();
+      default: return "";
+    }
+  }
 }
 
 export default Numerology;

@@ -121,4 +121,29 @@ describe("Numerology", () => {
 
     expect(n.getDestinyNumber(name)).to.equal(expectedDestinyNumber);
   });
+
+  it("shall have the ability to get the birth force number", () => {
+    let dateOfBirth = "1950.1218";
+    let expectedBirthForceNumber = 9;
+    let n = new Numerology();
+
+    expect(expectedBirthForceNumber).to.equal(n.getBirthForceNumber(dateOfBirth));
+  });
+
+  it("shall have the ability to get the heart's desire number", () => {
+    let name = "Freda May Norton";
+    let expectedHeartsDesireNumber = 1;
+    let n = new Numerology();
+
+    expect(expectedHeartsDesireNumber).to.equal(n.getHeartsDesireNumber(name));
+  });
+
+  it("shall have the ability to get the personality number", () => {
+    let name = "Abraham Lincoln";
+    let expectedPersonalityNumber = 6;
+    let n = new Numerology();
+
+    expect(expectedPersonalityNumber).to.equal(n.getPersonalityNumber(name));
+  
+  });
 });
