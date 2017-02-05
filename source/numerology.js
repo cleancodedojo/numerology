@@ -105,6 +105,43 @@ class Numerology {
       default: return "";
     }
   }
+
+  getPersonalityNumber(name) {
+    let consonants = "";
+
+    for (let i = 0; i < name.length; i += 1) {
+      consonants += this.stripVowels(name[i]);
+    }
+
+    return this.getDestinyNumber(consonants);
+  }
+
+  stripVowels(letter) {
+    switch(letter.toLowerCase()) {
+      case "j":
+      case "s":
+      case "b":
+      case "k":
+      case "t":
+      case "c":
+      case "l":
+      case "d":
+      case "m":
+      case "v":
+      case "n":
+      case "w":
+      case "f":
+      case "x":
+      case "g":
+      case "p":
+      case "y":
+      case "h":
+      case "q":
+      case "z":
+      case "r": return letter.toLowerCase();
+      default: return "";
+    }
+  }
 }
 
 export default Numerology;

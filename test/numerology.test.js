@@ -137,4 +137,13 @@ describe("Numerology", () => {
 
     expect(expectedHeartsDesireNumber).to.equal(n.getHeartsDesireNumber(name));
   });
+
+  it("shall have the ability to get the personality number", () => {
+    let name = "Abraham Lincoln";
+    let expectedPersonalityNumber = 6;
+    let n = new Numerology();
+
+    expect(expectedPersonalityNumber).to.equal(n.getPersonalityNumber(name));
+  
+  });
 });
