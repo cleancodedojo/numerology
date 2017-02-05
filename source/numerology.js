@@ -80,6 +80,10 @@ class Numerology {
     let numberArray = this.getNumberArray(sumString);
     return numberArray;
   }
+
+  getBirthForceNumber(date_yyyymmdd) {
+    return this.getDestinyNumber(date_yyyymmdd);
+  } 
 }
 
 export default Numerology;
