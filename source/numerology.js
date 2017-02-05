@@ -83,7 +83,28 @@ class Numerology {
 
   getBirthForceNumber(dateOfBirth) {
     return this.getDestinyNumber(dateOfBirth);
-  } 
+  }
+
+  getHeartsDesireNumber(name) {
+    let vowels = "";
+
+    for (let i = 0; i < name.length; i += 1) {
+      vowels += this.stripConsonants(name[i]);
+    }
+
+    return this.getDestinyNumber(vowels);
+  }
+
+  stripConsonants(letter) {
+    switch(letter.toLowerCase()) {
+      case "a":
+      case "e": 
+      case "i": 
+      case "o":
+      case "u": return letter.toLowerCase();
+      default: return "";
+    }
+  }
 }
 
 export default Numerology;
