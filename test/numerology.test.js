@@ -123,10 +123,10 @@ describe("Numerology", () => {
   });
 
   it("shall have the abilit to get the birth force number", () => {
-    let dateOfBirth = "1950.12.18";
+    let dateOfBirth = "1950.1218";
     let expectedBirthForceNumber = 9;
     let n = new Numerology();
-    
-    expect(n.getBirthForceNumber(dateOfBirth)).to.equal(expectedBirthForceNumber);
+
+    expect(expectedBirthForceNumber).to.equal(n.getBirthForceNumber(dateOfBirth));
   });
 });

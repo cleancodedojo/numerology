@@ -81,8 +81,8 @@ class Numerology {
     return numberArray;
   }
 
-  getBirthForceNumber(date_yyyymmdd) {
-    return this.getDestinyNumber(date_yyyymmdd);
+  getBirthForceNumber(dateOfBirth) {
+    return this.getDestinyNumber(dateOfBirth);
   } 
 }
 
